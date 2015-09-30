@@ -11,7 +11,7 @@ import ifes.edu.br.persistencia.PersistenciaJogador;
  *
  * @author Ricardo
  */
-public class ControleJogador {
+public class Jogo {
     static public void inserirJogador(String nome, int idade) throws Exception {
         Jogador jogador;
         try {

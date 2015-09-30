@@ -5,7 +5,7 @@
  */
 package ifes.edu.br.visao;
 
-import ifes.edu.br.negocio.ControleJogador;
+import ifes.edu.br.negocio.Jogo;
 import ifes.edu.br.negocio.Jogador;
 import javax.swing.JOptionPane;
 import javax.swing.text.MaskFormatter;
@@ -113,7 +113,8 @@ public class JanCadastrarJogador extends javax.swing.JFrame {
         String nome = ctNome.getText();
         int idade = Integer.parseInt(ctIdade.getText());
         try {
-           ControleJogador.inserirJogador(nome, idade);
+           Jogo.inserirJogador(nome, idade);
+           
            JOptionPane.showMessageDialog(this, "Jogador inserido com sucesso!");
             
         } catch(Exception e) {
